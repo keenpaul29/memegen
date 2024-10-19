@@ -11,7 +11,7 @@ const Home = () => {
   }, [])
 
   return (
-    <div className="grid grid-cols-4 gap-5 p-4">
+    <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
         {
           data.map(el => <MemeCard key={el.id} img={el.url} title ={el.name}/>)
         }
